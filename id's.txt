@@ -1,0 +1,63 @@
+Login id - TN33315471
+
+driver.findElement(By.xpath("(//input[@type='text'])[1]")).sendKeys("Naveen");
+	driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys("Deva");
+	driver.findElement(By.xpath("//textarea[@class='form-control ng-pristine ng-untouched ng-valid']")).sendKeys("A30,New Housing Unit,Dharapuram");
+	driver.findElement(By.xpath("//input[@type='email']")).sendKeys("Naveendeva@gmail.com");
+	driver.findElement(By.xpath("//input[@type='tel']")).sendKeys("9876543210");
+	driver.findElement(By.xpath("(//input[@type='radio'])[1]")).click();
+	driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).click();
+	//driver.findElement(By.xpath("//div[@class='ui-autocomplete-multiselect ui-state-default ui-widget']")).sendKeys("Tamil");
+	Actions a=new Actions(driver);
+	WebElement skills = driver.findElement(By.xpath("(//select[@type='text'])[1]"));
+	a.moveToElement(skills).perform();
+	WebElement anySkills= driver.findElement(By.xpath("//*[@id=\"Skills\"]/option[5]"));
+	a.moveToElement(anySkills).perform();
+	//WebElement country = driver.findElement(By.xpath("(//select[@type='text'])[2]"));
+	//a.moveToElement(country).perform();
+	WebElement selection2 = driver.findElement(By.xpath("//span[@class='selection']"));
+	a.moveToElement(selection2).perform();
+	WebElement aus = driver.findElement(By.xpath("//span[@class='select2-selection__rendered']"));
+	a.moveToElement(aus).perform();
+	WebElement year = driver.findElement(By.xpath("(//select[@type='text'])[3]"));
+	a.moveToElement(year).perform();
+	driver.findElement(By.xpath("//*[@id=\"yearbox\"]/option[84]")).click();
+	WebElement month = driver.findElement(By.xpath("(//select[@type='text'])[4]"));
+	a.moveToElement(month).perform();
+	driver.findElement(By.xpath("//*[@id=\"basicBootstrapForm\"]/div[11]/div[2]/select/option[13]")).click();
+	WebElement day = driver.findElement(By.xpath("(//select[@type='text'])[5]"));
+	a.moveToElement(day).perform();
+	driver.findElement(By.xpath("//*[@id=\"daybox\"]/option[13]")).click();
+	driver.findElement(By.id("firstpassword")).sendKeys("Password@2022");
+	driver.findElement(By.id("secondpassword")).sendKeys("Password@2022");
+	driver.findElement(By.id("submitbtn")).click();
+
+
+   driver.findElement(By.xpath("//a[@class='btn btn-primary-shadow btn-block']")).click();
+    driver.findElement(By.xpath("(//input[@type='text'])[3]")).sendKeys("Nizam");
+    driver.findElement(By.xpath("(//input[@type='text'])[4]")).sendKeys("Roy");
+    driver.findElement(By.xpath("//input[@type='email']")).sendKeys("roynizam00@gmail.com");
+    driver.findElement(By.xpath("(//input[@type='text'])[5]")).sendKeys("9898979790");
+    driver.findElement(By.xpath("//select[@class='upcoming__registration--input']")).click();
+    driver.findElement(By.xpath("//option[text()='India']")).click();
+    driver.findElement(By.xpath("//textarea[@class='upcoming__registration--input']")).sendKeys("sfrgrgrgeveagrgrgargrgrahcfuhufnhef");
+    driver.findElement(By.xpath("(//input[@type='text'])[6]")).sendKeys("Pune");
+    driver.findElement(By.xpath("(//input[@type='text'])[7]")).sendKeys("NeOh");
+    driver.findElement(By.xpath("//button[text()='Send']")).click();
+
+ WebElement firstName = driver.findElement(By.xpath("(//input[@type='text'])[1]"));
+	firstName.sendKeys("Veera");
+	WebElement lastName = driver.findElement(By.xpath("(//input[@type='text'])[2]"));
+	lastName.sendKeys("Deva");
+	WebElement eMail = driver.findElement(By.xpath("//input[@type='email']"));
+	eMail.sendKeys("atoz");
+	WebElement passW1 = driver.findElement(By.xpath("(//input[@type='password'])[1]"));
+	passW1.sendKeys("veera@15");
+	WebElement passW2 = driver.findElement(By.xpath("(//input[@type='password'])[2]"));
+	passW2.sendKeys("veera@15");
+	WebElement nextButton = driver.findElement(By.xpath("//span[text()='Next']"));
+	nextButton.click(); 
+	WebElement phNo = driver.findElement(By.xpath("//input[@class='VfPpkd-fmcmS-wGMbrd ']"));
+	phNo.sendKeys("9898981212");
+	WebElement nextButton2= driver.findElement(By.xpath("//span[text()='Next']"));
+    nextButton2.click();
